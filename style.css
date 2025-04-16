@@ -1,0 +1,242 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button_1:hover {
+    background: #333;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase-education {
+    min-height: 400px;
+    background: url('../images/medical-education.jpg') no-repeat 0 -400px;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+}
+
+#showcase-education h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase-education p {
+    font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px;
+    color: #fff;
+    background: #35424a;
+}
+
+#newsletter h2 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 38px;
+    width: 250px;
+}
+
+/* Main Content */
+#main {
+    margin: 20px 0;
+}
+
+#main .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-col {
+    flex: 70%;
+    padding: 20px;
+}
+
+#sidebar {
+    flex: 30%;
+    padding: 20px;
+    background: #e6e6e6;
+}
+
+.page-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #e8491d 3px solid;
+}
+
+.dark {
+    padding: 20px;
+    background: #35424a;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: #e8491d 1px solid;
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+/* Resources Section */
+#resources {
+    padding: 20px 0;
+    background: #fff;
+    text-align: center;
+}
+
+#resources h2 {
+    margin-bottom: 30px;
+}
+
+.resource-box {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 0 1.5%;
+    vertical-align: top;
+}
+
+.resource-box i {
+    color: #e8491d;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background: #35424a;
+    text-align: center;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h2,
+    #newsletter form,
+    #main .container,
+    #main-col,
+    #sidebar,
+    .resource-box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase-education h1 {
+        font-size: 40px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
